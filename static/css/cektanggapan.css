@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Rubik:ital,wght@0,500;1,500&display=swap');
+
+.c-section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section > .card {
+    width: 90%;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.312);
+    padding: 20px 10px;
+    margin-top: 30px;
+    border-radius: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section > .card > .card-core {
+    width: 90%;
+    padding:10px;
+    background-color: white;
+    margin-top: 20px;
+    border-radius: 0.7rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.312);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section > .card > .card-core > .card-top {
+    width: 100%;
+    height: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: rgb(108, 108, 108);
+}
+
+section > .card > .card-core > .card-top > p{
+    font-size: 0.8rem;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+section > .card > .card-core > .card-mid > p {
+    font-size: 0.8rem;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+section > .card > .card-core > .card-mid {
+    width: 95%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 10px 0;
+}
+
+section > .card > .card-core > .card-image {
+    width:fit-content;
+}
+
+section > .card > .card-core > .card-image > img {
+    max-width: 100%;
+    height: auto;
+}
+
+section > .card >.card-tanggapan {
+    width: 90%;
+    padding:10px;
+    background-color: white;
+    margin-top: 20px;
+    border-radius: 0.7rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.312);
+    display: flex;
+}
+
+section > .card > .card-tanggapan > p {
+    padding: 0 10px;
+    font-size: 0.8rem;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    
+}
+
+@media screen and (max-width: 501px) {
+    section > .card > .card-core > .card-top > p {
+        font-size: 0.7rem;
+    }
+}

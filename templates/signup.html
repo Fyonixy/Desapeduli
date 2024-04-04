@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        function validate(nik,notlp,name,password ){
+            if(nik.length < 16){
+                $("#alert").text("Masukan nik sebanyak 16 angka")
+                $("#tag").toggleClass("alert")
+                return false
+            }else if(notlp.length < 13){
+                $("#alert").text("Masukan No tlp anda sebanyak 13 angka")
+                $("#tag").toggleClass("alert")
+                return false
+            }else if(password.length < 6){
+                $("#alert").text("Password minimal lebih dari 6 karakter")
+                $("#tag").toggleClass("alert")
+                return false
+            }else{
+                $("#tag").toggleClass("none")
+                $("#alert").text("")
+                return true
+            }
+            
+        }
+    </script>
+    <link rel="stylesheet" href="/static/css/signup.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <div class="card">
+            {% if error %}
+            <div class="alert">
+                <p id="alert">{{error}}</p>
+            </div>
+            {% else %}
+            <div id="tag" class="none">
+                <p id="alert" ></p>
+            </div>
+            {% endif %}
+            <form onsubmit="return validate(this.nik.value , this.notlp.value , this.name.value , this.password.value)" id="myForm" action="/signuping" method="post">
+                <p class="sign">Signup</p>
+                <input placeholder="NIK" type="number" id="nik" name="nik" required>
+                <p class="hint">Masukan NIK 16 sebanyak angka.</p>
+                <input placeholder="Password" type="password" id="password" name="password" maxlength="32" required>
+                <p class="hint">Masukan Password minimal 6 karakter.</p>
+                <input placeholder="Name" type="text" id="name" name="name" maxlength="35" required>
+                <input placeholder="Username" type="text" id="username" name="username" maxlength="25" required>
+                <input placeholder="NoTlp" type="number" id="notlp" name="notlp" required>
+                <button type="submit">Daftar</button>
+            </form>
+            <a href="/login"><button>Login</button></a>
+        </div>
+    </div>
+    
+
+</body>
+</html>

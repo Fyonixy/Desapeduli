@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="/static/css/navadmin.css">
+    <link rel="stylesheet" href="/static/css/admin.css">
+    <script src="/static/js/admin.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <a href="/admin"><span>Desa</span>Peduli</a>
+        <div class="optnav">
+            <a class="mark" href="/">Home</a>
+            <a href="/profileadmin">Profile</a>
+        </div>
+    </nav>
+    <section id="app">
+        <div id="opt" class="opt">
+            <button class="mark" onclick="comproses('proses')">Data Laporan</button>
+            <button onclick="comproses('selesai')">Laporan Selesai</button>
+        </div>
+        <div class="data">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID Pengaduan</th>
+                        <th>Tanggal Pengaduan</th>
+                        <th>Status</th>
+                        <th>Cek</th>
+                    </tr>
+                </thead>
+                <tbody id="data">
+                    
+                </tbody>
+            </table>
+        </div>
+        <div class="footer">
+            <div class="footer-l">
+                <a href="/">Home</a>
+                <a href="/profile">Profile</a>
+            </div>
+            <div class="footer-r">
+                <a href="/logout">Logout</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

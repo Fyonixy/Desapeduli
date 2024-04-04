@@ -1,0 +1,68 @@
+section {
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section > .opt {
+    width: 90%;
+    height: 40px;
+    margin-top: 20px;
+    display:flex;
+    justify-content: space-between;
+    
+}
+
+section > .opt > button {
+    width: 49%;
+    border: none;
+    background-color: rgb(239, 239, 239);
+}
+
+section > .opt > .mark {
+    background-color: rgb(255, 204, 0);
+    color: white;
+}
+
+section > .data {
+    width: 90%;
+    height: 60vh;
+    box-shadow: 0 0 1px black;
+    overflow-y: auto; /* Membuat scrollbar jika konten lebih panjang dari tinggi div */
+    scrollbar-width: thin;
+    margin-top: 10px;
+}
+
+section > .data > table {
+    width: 100%; /* Agar tabel mengisi seluruh lebar div */
+    border-collapse: collapse; /* Gabungkan batas antar sel */
+}
+
+section > .data > table td,
+section > .data > table th {
+    padding: 8px; /* Ubah padding agar terlihat lebih kompak */
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+}
+
+section > .data > table th{
+    box-shadow: inset 0px 0px 1px black;
+}
+
+section > .data > table td{
+    box-shadow: 1px 0px 1px black;
+}
+
+section > .data > table > tbody > tr > td > a {
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    background-color: rgb(255, 204, 0);
+    padding: 4px;
+    border-radius: 0.2rem;
+}
+
+
+
+

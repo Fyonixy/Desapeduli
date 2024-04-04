@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="/static/css/nav.css">
+    <link rel="stylesheet" href="/static/css/cektanggapan.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <a href="/"><span>Desa</span>Peduli</a>
+        <div class="optnav">
+            <a href="/">Home</a>
+            <a href="/profile">Profile</a>
+        </div>
+    </nav>
+    <section class="c-section">
+        <div class="card">
+            <div class="card-core">
+                <div class="card-top">
+                    <p>{{laporan["id_pengaduan"]}}</p>
+                    <p>{{laporan["tgl_pengaduan"]}}</p>
+                </div>
+                <div class="card-mid">
+                    <p>Isi Laporan : {{laporan["isi_laporan"]}}</p>
+                    <p>Status :{{laporan["status"]}}</p>
+                </div>
+                <div class="card-image">
+                    <img src="{{laporan["foto"]}}">
+                </div>
+            </div>
+            {% if tanggapan %}
+                <div class="card-tanggapan">
+                    <p>Isi Tanggapan : {{tanggapan["tanggapan"]}}</p>
+                </div>
+            {% else %}
+    
+            {% endif %}
+        </div>
+        <div class="footer">
+            <div class="footer-l">
+                <a href="/">Home</a>
+                <a href="/profile">Profile</a>
+            </div>
+            <div class="footer-r">
+                <a href="/logout">Logout</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="/static/js/index.js"></script>
+    <link rel="stylesheet" href="/static/css/nav.css">
+    <link rel="stylesheet" href="/static/css/index.css">
+    <title>Home | DesaPeduli</title>
+</head>
+<body>
+        <nav>
+            <a href="/"><span>Desa</span>Peduli</a>
+            <div class="optnav">
+                <a class="mark" href="/">Home</a>
+                <a href="/profile">Profile</a>
+            </div>
+        </nav>
+        <section id="app">
+            <div class="c-section">
+                <div class="card-top">
+                    <h1>Selamat datang di DesaPeduli</h1>
+                    <p>Website pengaduan masyarakat desa</p>
+                </div>
+                <div class="buttons">
+                    <button onclick="btnpost()" class="on" >Kirim Laporan</button>
+                    <button onclick="get()" class="off" >Laporan Terkirim</button>
+                </div>
+                <div id="data">
+                    <textarea id="input" placeholder="Masukan laporan anda di dalam kolom yang sudah diberikan"></textarea>
+                    <div class="file-upload">
+                        <input type="file" onchange="upimage(this)" id="gambar" name="gambar" accept="image/*" multiple="false">
+                        <label id="labelgambar" for="gambar" ><p>Tambahkan Gambar</p></label>
+                        <button id="send" onclick="send()">Kirim</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="footer-l">
+                    <a href="/">Home</a>
+                    <a href="/profile">Profile</a>
+                </div>
+                <div class="footer-r">
+                    <a href="/logout">Logout</a>
+                </div>
+            </div>
+        </section>
+</body>
+</html>

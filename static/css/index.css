@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Rubik:ital,wght@0,500;1,500&display=swap');
+
+.c-section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-top{
+    width: 97%;
+    height: 200px;
+    background-color: rgb(22, 84, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 1rem;
+    font-family: "Lato", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.c-section > .buttons {
+    width: 97%;
+    height: 50px;
+    display: flex;
+    margin-top: 20px;
+}
+
+.c-section > .buttons > button {
+    width: 140px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 0.5rem;
+    font-family: "Lato", sans-serif;
+    font-size: 0.8rem;
+    font-style: normal;
+}
+
+.c-section > .buttons > .on {
+    background-color: rgb(185, 255, 159);
+    color: rgb(36, 136, 0);
+    cursor: pointer;
+}
+
+.c-section > .buttons > .off{
+    background-color: rgb(212, 212, 212);
+    color: black;
+    cursor: pointer;
+}
+
+.c-section > .buttons > .off:hover{
+    background-color: rgb(160, 160, 160);
+    color: black;
+}
+
+.c-section > #data  {
+    width: 90%;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.312);
+    padding: 20px 10px;
+    margin-top: 30px;
+    border-radius: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.c-section > #data > #input {
+    resize: none;
+    border-radius: 1rem;
+    width: 95%;
+    height: 200px;
+    padding: 10px 10px;
+}
+
+.c-section > #data > #input::placeholder{
+    width: 100%;
+    height: 20px;
+}
+
+
+.c-section > #data > .file-upload {
+    width: 95%;
+    height: 40px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.c-section > #data > .file-upload > #gambar {
+    display: none;
+}
+
+.c-section > #data > .file-upload > label {
+    width: 69%;
+    background-color: rgb(43, 163, 0);
+    color: white;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Lato", sans-serif;
+    font-size: 0.8rem;
+    font-style: normal;
+}
+
+.c-section > #data > .file-upload > label:hover {
+    background-color: rgb(30, 111, 0);
+}
+
+.c-section > #data > .file-upload > button {
+    width: 29%;
+    background-color: rgb(43, 163, 0);
+    color: white;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    border: none;
+    font-family: "Lato", sans-serif;
+    font-size: 0.8rem;
+    font-style: normal;
+}
+
+.c-section > #data > .file-upload > button:hover {
+    background-color: rgb(30, 111, 0);
+}
+
+.c-section > #data > .box-get {
+    width: 90%;
+    padding:10px;
+    background-color: white;
+    margin-top: 20px;
+    border-radius: 0.7rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.312);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.c-section > #data > .box-get > .box-top {
+    width: 100%;
+    height: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: rgb(108, 108, 108);
+}
+
+.c-section > #data > .box-get > .box-top > p {
+    font-size: 0.8rem;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.c-section > #data > .box-get > .box-mid {
+    width: 95%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 10px 0;
+}
+
+.c-section > #data > .box-get > .box-mid > p {
+    font-size: 0.8rem;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.c-section > #data > .box-get > .box-mid > a > button {
+    font-family: "Lato", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    font-style: normal;
+    color: white;
+    background-color: rgb(43, 163, 0);
+    border-radius: 0.5rem;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.c-section > #data > .box-get > .box-mid > a > button:hover {
+    background-color: rgb(30, 111, 0);
+}
+
+.c-section > #data > .box-get > .box-image {
+    width: fit-content;
+}
+
+.c-section > #data > .box-get > .box-image > img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 501px) {
+    .card-top{
+        font-size: 0.7rem;
+    }
+    .c-section > .buttons {
+        justify-content: center;
+    }
+}

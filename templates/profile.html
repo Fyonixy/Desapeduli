@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/static/js/index.js"></script>
+    <link rel="stylesheet" href="/static/css/nav.css">
+    <link rel="stylesheet" href="/static/css/profile.css">
+    <title>Profile | DesaPeduli</title>
+</head>
+<body>
+    <nav>
+        <a href="/"><span>Desa</span>Peduli</a>
+        <div class="optnav">
+            <a href="/">Home</a>
+            <a class="mark"  href="/profile">Profile</a>
+        </div>
+    </nav>
+    <section class="c-section">
+        <div class="content">
+            <div class="card">
+                <div class="card-img">
+                    <img src="/static/profile/default.png">
+                    <p>{{user["nama"]}}</p>
+                </div>
+                <div class="card-bio">
+                    <div class="biodata"><p>Nik : {{user["nik"]}}</p></div>
+                    <div class="biodata"><p>Nama : {{user["nama"]}}</p></div>
+                    <div class="biodata"><p>Username : {{user["username"]}}</p></div>
+                    <div class="biodata"><p>Notlp : {{user["notlp"]}}</p></div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-l">
+                <a href="/">Home</a>
+                <a href="/profile">Profile</a>
+            </div>
+            <div class="footer-r">
+                <a href="/logout">Logout</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

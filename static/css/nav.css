@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Rubik:ital,wght@0,500;1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    background-color: white;
+    top: 0;
+    z-index: 1;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+}
+
+
+nav > a {
+    text-decoration: none;
+    color: black;
+    padding: 15px 15px;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+nav > a > span {
+    color:rgb(43, 163, 0);
+}
+
+nav > .optnav {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+}
+
+nav > .optnav > a {
+    margin: 0 5px;
+    text-decoration: none;
+    color: black;
+    font-family: "Lato", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+nav > .optnav > .mark {
+    color: white;
+    padding:8px 14px;
+    border-radius: 0.4rem;
+    background-color: rgb(43, 163, 0);
+}
+
+section {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: -1;
+}
+
+.footer{
+    width: 100%;
+    height: 200px;
+    margin-top: 20px;
+    background-color: rgb(37, 37, 37);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer > .footer-l {
+    width: 40%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-right: 1px solid white;
+}
+
+.footer > .footer-l > a {
+    color: white;
+    text-decoration: none;
+    font-family: "Lato", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.footer > .footer-r {
+    width: 40%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: end;
+}
+
+.footer > .footer-r > a {
+    color: white;
+    text-decoration: none;
+    font-family: "Lato", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 700;
+    font-style: normal;
+}
+
+@media screen and (max-width: 801px) {
+    nav > .optnav > a {
+        font-size: 0.7rem;
+    }
+}
